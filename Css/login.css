@@ -1,0 +1,48 @@
+/* Thiết lập nền cho toàn bộ trang */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://sofavinaco.com/hoanghung/32/images/xu-huong-thiet-ke-noi-that-phong-khach-mau-den-trang%20(5).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Làm mờ nền của phần đăng nhập */
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.7); /* Nền trắng mờ */
+    backdrop-filter: blur(10px); /* Làm mờ nền */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng nút đăng nhập qua mạng xã hội */
+.btn-outline-primary:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.btn-outline-danger:hover {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.btn-outline-warning:hover {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+/* Nút đăng ký và quên mật khẩu */
+.btn-link {
+    font-size: 0.9rem;
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+}
