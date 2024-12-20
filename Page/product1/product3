@@ -1,0 +1,584 @@
+<html>
+ <head>
+  <title>
+   Product Page
+  </title>
+  <link rel="icon" href="../../Picture/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../Css/main.css">
+  <link rel="stylesheet" href="../../Css/product.css">
+  <link rel="stylesheet" href="../../Css/main-moblie.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+ <body>
+    <div class="header">
+        <div class="content">
+            <div class="box-menu-mobile">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav class="box-menu">
+                <ul class="all-list-menu">
+                    <li>
+                        <a href="../../index.html" class="hover-a">Home</a>
+                        <!-- <a href="">
+                            <i class="fa-solid fa-angle-down angle-down"></i>
+                        </a> -->
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../Shop.html" class="hover-a">Shop</a>
+                        <!-- <a href="">
+                            <i class="fa-solid fa-angle-down angle-down"></i>
+                        </a> -->
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../about.html" class="hover-a">About Us</a>
+                        <!-- <a href="">
+                            <i class="fa-solid fa-angle-down angle-down"></i>
+                        </a> -->
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../blog.html" class="hover-a">Blog</a>
+                        <!-- <a href="">
+                            <i class="fa-solid fa-angle-down angle-down"></i>
+                        </a> -->
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="" class="hover-a">Page</a>
+                        <a href="">
+                            <i class="fa-solid fa-angle-down angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="box-logo">
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../../Picture/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="box-icon">
+                <a href="" class="box-search">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </a>
+                <a href="../login.html" class="box-user">
+                    <i class="fa-regular fa-user user"></i>
+                </a>
+                <a href="" class="box-heart">
+                    <i class="fa-regular fa-heart heart"></i>
+                </a>
+                <a href="" class="box-cart">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="nav">
+    <a href="#">
+        Shop All
+    </a>
+    <a href="#">
+        Sofas &amp; Chairs
+    </a>
+    <a href="#">
+        Furniture
+    </a>
+    <a href="#">
+        Lighting
+    </a>
+    <a href="#">
+        Soft Furnishings
+    </a>
+    <a href="#">
+        Home Accessories
+    </a>
+</div>
+
+<div class="container ml-5">
+    <div class="row ">
+        <!-- Image Section -->
+       
+            <div class="col-12 col-md-6">
+             
+                <div class="image-section">
+                    <img id="main-image" alt="Kayra Queen Storage Bed - Ivory Bouclé" height="500" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image120802.jpg?w=2600&q=60&fm=webp&fit=max">
+                </div>
+                <div class="image-section1 d-flex justify-content-center flex-wrap mt-3">
+                    <img alt="" height="100" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image120803.jpg?w=2600&q=60&fm=webp&fit=max" width="100"  onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image147028.jpg?w=2600&q=60&fm=webp&fit=max" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image133254.jpg?w=2600&q=60&fm=webp&fit=max" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image133255.jpg?w=2600&q=60&fm=webp&fit=max" width="100" onclick="changeMainImage(this)">
+              </div>
+            </div>
+  
+
+        <!-- Details Section -->
+        <div class="col-12 col-md-6">
+            <div class="details-section">
+                <h1>Kayra Queen Storage Bed - Ivory Bouclé</h1>
+                <div class="price">$2099</div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <a href="#">1 Review</a>
+                </div>
+
+                <div class="detail-section">
+                    <div class="options">
+                        <div class="option1">
+                            <span>SIZE:</span>
+                            <div class="option-buttons">
+                                <button onclick="toggleActive(this)">KING</button>
+                                <button class="active" onclick="toggleActive(this)">QUEEN</button>
+                            </div>
+                        </div>
+                        <div class="option1">
+                            <span>Storage:</span>
+                            <div class="option-buttons">
+                                <button onclick="toggleActive(this)">NO</button>
+                                <button class="active" onclick="toggleActive(this)">YES</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="add-to-cart">ADD TO CART</button>
+                <div class="info"><i class="fas fa-truck"></i><span>Delivered to <a href="#">Los Angeles, CA</a>: Oct 31st - Nov 19th</span></div>
+                <div class="info"><i class="fas fa-check-circle"></i><span>In stock and ready to ship</span></div>
+                <div class="info"><i class="fas fa-undo"></i><span><a href="#">30 day satisfaction guarantee.</a></span></div>
+                <div class="info"><i class="fas fa-dollar-sign"></i><span><a href="#">Affirm financing</a> as low as $175/month.</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeMainImage(smallImage) {
+        document.getElementById("main-image").src = smallImage.src;
+    }
+    
+    function toggleActive(element) {
+        const siblings = element.parentNode.querySelectorAll('button');
+        siblings.forEach((btn) => btn.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
+
+
+<div class="border"></div>
+<div class="box-product-sell">
+    <div class="box-product-sell-2">
+        <div class="in-title">
+            <div class="word">
+                Deals of the days
+            </div>
+            <div class="see-deals">
+                <a href="">
+                    View all deals
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="product-slider">
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-1"
+                                    src="https://cdn-images.article.com/products/SKU343/2890x1500/image134268.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="box-sell">-33%</div>
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 reviews)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1 </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>$150.000</del> <span>$100.00</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>add to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-2"
+                                    src="https://cdn-images.article.com/products/SKU24344/2890x1500/image159954.jpg?w=850&q=40&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 reviews)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1</div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>$150.00</del> <span>$100.00</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>add to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-3"
+                                    src="https://cdn-images.article.com/products/SKU2128/2890x1500/image162322.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 reviews)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1 </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>$150.00</del> <span>$100.00</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>add to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-4"
+                                    src="https://cdn-images.article.com/products/SKU26174/2890x1500/image170637.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 reviews)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1  </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>$150.00</del> <span>$100.00</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>add to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and Right Buttons -->
+            <button id="left1">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="right1">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <script>var left = document.getElementById("left1");
+            var right = document.getElementById("right1");
+            var container = document.querySelector(".product-container");
+
+            right.onclick = function () {
+                container.style.transform = "translateX(-33.33%)";
+            };
+
+            left.onclick = function () {
+                container.style.transform = "translateX(0)";
+            };
+        </script>
+    </div>
+</div>
+
+<div class="border"></div>
+
+<div class="contact-container">
+    <div class="contact-header">Have a question? We're here to help.</div>
+
+    <div class="contact-info row">
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <span class="highlight">+1-888-746-3455</span>
+                <div class="details">
+                    <span>Mon-Fri 8 PM - 7 AM GMT+7</span>
+                    <span>Sat-Sun 9 PM - 7 AM GMT+7</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-comments"></i>
+            <div>
+                <span class="highlight">Live Chat with us</span>
+                <div class="details">
+                    <span>Mon-Fri 8 PM - 9 AM GMT+7</span>
+                    <span>Sat-Sun 9 PM - 9 AM GMT+7</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <span class="highlight">Send us a message</span>
+                <div class="details">
+                    <span>Expect a reply within 2 days</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container1">
+    <h2 class="section-title">WHY BUY FROM FUNORI ?</h2>
+    <div class="benefit-items">
+        <div class="benefit-item">
+            <i class="fas fa-dollar-sign"></i>
+            <h3 class="benefit-title">Modern Furniture at Fair Prices</h3>
+            <p class="benefit-description">Our promise? High-quality furniture at radically lower (and much fairer) prices than comparable retailers.</p>
+            <a href="#" class="benefit-link">Learn more</a>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3 class="benefit-title">30-Day Satisfaction Guarantee</h3>
+            <p class="benefit-description">We’re confident you’ll love your new Article furniture, but just to make sure, you have 30 days to try it out.</p>
+            <a href="#" class="benefit-link">Learn more</a>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-question-circle"></i>
+            <h3 class="benefit-title">We’re Here To Help</h3>
+            <p class="benefit-description">If questions arise, our friendly and knowledgeable Customer Care team is just a phone call, chat, or email away.</p>
+            <a href="#" class="benefit-link">Contact us</a>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center text-center text-md-start">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <h1 class="fw-light">New products, sweet savings — straight to your inbox.</h1>
+            <p class="text-muted">Keep up with what we’re up to. Unsubscribe at any time.</p>
+        </div>
+        <div class="col-md-6">
+            <form class="row g-2">
+                <div class="col-12 col-md-auto flex-grow-1">
+                    <input type="email" class="form-control" placeholder="Your email" required>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <button type="submit" class="btn btn-subscribe text-white px-4 w-100">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <!-- footer -->
+  <div class="box-first-footer">
+    <div class="contact">
+        <h2>CONTACT US</h2>
+        <div class="in">
+            <div>Add :4 Copley Place, 7th Floor, Boston, MA 6</div>
+            <div>Tell : 866.453.4748</div>
+            <div>HR Fax: 810.222.5439</div>
+            <div>sales@funorifurniture.com</div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>CATEGOIRES</h2>
+        <div class="in">
+            <a href="">
+                <div>Furniture</div>
+            </a>
+            <a href="">
+                <div>Tables</div>
+            </a>
+            <a href="">
+                <div>Seating</div>
+            </a>
+            <a href="">
+                <div>Desks & office </div>
+            </a>
+            <a href="">
+                <div>Storage</div>
+            </a>
+            <a href="">
+                <div>Bed & Bath</div>
+            </a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>SERVICES</h2>
+        <div class="in">
+            <a href="">
+                <div>Sale</div>
+            </a>
+            <a href="">
+                <div>Quick Ship</div>
+            </a>
+            <a href="">
+                <div>New Designs</div>
+            </a>
+            <a href="">
+                <div>Accidental Fabric Protection</div>
+            </a>
+            <a href="">
+                <div>Furniture Care</div>
+            </a>
+            <a href="">
+                <div>Gift Cards</div>
+            </a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>JOIN US</h2>
+        <div class="in">
+            <div style="margin-bottom: 25px;">Enter your email below to be the first to know 
+                <br>
+                about new collections and product launches.
+            </div>
+            <div class="box-email">
+                <input type="text" placeholder="Email adress...">
+                <button type="submit">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+            <div class="icon-contact">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </li>                     
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box-second-footer">
+    <div class="first-box">
+        <div class="title">
+            Copyright © 2022. All Right Reserved
+        </div>
+    </div>
+    <div class="second-box">
+        <div class="box-bank">
+            <img src="Picture/payments-1.png" alt="">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
+<script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/product.js"></script>
+
+
+
+
+
+
