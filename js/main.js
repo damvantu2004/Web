@@ -92,13 +92,13 @@ setInterval(function() {
     // chuyển đổi màu cho list index 
     if(index == 1) {
         listButton[0].style = 'background-color: transparent';
-        listButton[1].style = 'background-color: #FF9B42';
+        listButton[1].style = 'background-color:rgb(48, 31, 17)';
     }else if(index == 2) {
         listButton[1].style = 'background-color: transparent';
-        listButton[2].style = 'background-color: #FF9B42';
+        listButton[2].style = 'background-color:rgb(39, 26, 14)';
     }else {
         listButton[2].style = 'background-color: transparent';
-        listButton[0].style = 'background-color: #FF9B42';
+        listButton[0].style = 'background-color:rgb(39, 23, 9)';
     }
     
     // nếu index lớn hơn số ảnh thì quay lại ảnh đầu tiên
@@ -106,7 +106,7 @@ setInterval(function() {
         index = 0;
     }
     document.getElementById('pic').src = img[index];
-}, 3000);
+}, 500);
 
 /// chuyển đổi ảnh trong khi hover vào img product
 let firstImg = document.getElementById('Pic-1');
