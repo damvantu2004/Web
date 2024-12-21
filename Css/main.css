@@ -102,8 +102,12 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    width: 230px;
     height: 50.422px;
+    border: 0.3px solid #fcfcfc; /* Viền 3px với màu xanh lá */
+    border-radius: 10px; /* Bo góc viền */
+    padding: 0px; /* Khoảng đệm giữa ảnh và viền */
+    box-shadow: 0 4px 8px rgba(251, 251, 251, 0.2); /* Thêm bóng đổ nhẹ */
 }
 
 /* Icon web */
