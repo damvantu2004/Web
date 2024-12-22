@@ -358,5 +358,20 @@
   box-shadow: 0 0 5px rgba(255, 155, 66, 0.5) !important; /* Hiệu ứng shadow màu cam */
 }
 
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  justify-items: center; 
+  align-items: center; 
+}
+
+.product-box {
+  box-sizing: border-box; 
+  text-align: center;
+}
+
+
+
 
 
