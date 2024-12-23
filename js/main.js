@@ -92,13 +92,13 @@ setInterval(function() {
     // chuyển đổi màu cho list index 
     if(index == 1) {
         listButton[0].style = 'background-color: transparent';
-        listButton[1].style = 'background-color:rgb(48, 31, 17)';
+        listButton[1].style = 'background-color:rgb(247, 134, 41)';
     }else if(index == 2) {
         listButton[1].style = 'background-color: transparent';
-        listButton[2].style = 'background-color:rgb(39, 26, 14)';
+        listButton[2].style = 'background-color:rgb(246, 146, 53)';
     }else {
         listButton[2].style = 'background-color: transparent';
-        listButton[0].style = 'background-color:rgb(39, 23, 9)';
+        listButton[0].style = 'background-color:rgb(242, 137, 46)';
     }
     
     // nếu index lớn hơn số ảnh thì quay lại ảnh đầu tiên
@@ -142,3 +142,7 @@ firstImg_2.addEventListener('mouseout', function() {
 });
 // -----------------------------------------------
 
+function toggleMenu() {
+    const menu = document.querySelector('.box-menu-mobile');
+    menu.classList.toggle('show');
+}
