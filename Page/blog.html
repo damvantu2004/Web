@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="../Css/main.css">
     <link rel="stylesheet" href="../Css/about.css">
     <link rel="stylesheet" href="../Css/main-moblie.css">
+    
     <title>Blog</title>
 </head>
 <body>
     <div class="header">
         <div class="content">
             <div class="box-menu-mobile">
-                <button>
+                <button onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <div class="dropdown">
+                    <a href="../index.html" class="hover-a">Trang chủ</a>
+                    <a href="Shop.html" class="hover-a">Cửa hàng</a>
+                    <a href="about.html" class="hover-a">Về chúng tôi</a>
+                    <a href="" class="hover-a">Blog</a>
+                </div>
             </div>
             <nav class="box-menu">
                 <ul class="all-list-menu">
@@ -389,3 +396,4 @@
     <!-- <div style="margin-bottom: 600px;"></div> -->
 </body>
 </html>
+<script src="../js/main.js"></script>

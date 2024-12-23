@@ -42,7 +42,29 @@ html {
         font-size: 19px;
         margin: 0;
     }
+/* Thêm các quy tắc CSS cho dropdown menu */
+.box-menu-mobile .dropdown {
+    display: none; /* Ẩn menu mặc định */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
+.box-menu-mobile .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.box-menu-mobile .dropdown a:hover {
+    background-color: #ddd;
+}
+
+.box-menu-mobile.show .dropdown {
+    display: block; /* Hiển thị menu khi có class 'show' */
+}
     .header .content {
         /* background-color: #FF9B42; */
         padding: 0;
