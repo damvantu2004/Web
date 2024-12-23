@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 00;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,8 +20,10 @@ html {
     margin-bottom: 10px;
     background-color: aqua;
     padding: 80px 0 90px 0;
-    background:rgb(237, 235, 235) ;
+    background:rgb(20, 8, 8) ;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/325/520/large_2x/white-abstract-background-design-geometric-wallpaper-poster-landing-page-vector.jpg');
     background-size: cover;
+    background-position: center ;
 }
 
 .box-banner-about .in-banner-about {
@@ -33,7 +35,7 @@ html {
 .in-banner-about .title-banner {
     font-size: 55px;
     font-weight: 400;
-    color: black;
+    color: rgb(15, 9, 8);
     opacity: 80%;
     text-align: center;
     
