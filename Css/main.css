@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-    --color-text: #868686;
-    --Hover-icon: #FF9B42;
+    --color-text: #070707;
+    --Hover-icon: #0c0c0b;
 }
 
 /* Phần hearder  */
@@ -57,7 +57,7 @@ html {
 .box-menu .all-list-menu li a {
     text-decoration: none;
     font-size: 16px;
-    color: var(--color-text);
+    color: rgb(33, 32, 32);
     font-weight: 500;
     padding: 0 0 5px 0;
     transition: 0.4s;
@@ -175,7 +175,7 @@ html {
 
 .in-content .title {
     font-size: 49px;
-    color: rgb(48, 28, 37);
+    color: rgb(27, 13, 19);
     margin-bottom: 10px;
     letter-spacing: 2.5px;
     transition: 5s;
@@ -476,7 +476,7 @@ html {
 .in-title .word  {
     font-size: 40px;
     font-weight: 600;
-    color: var(--color-text);
+    color: rgb(63, 61, 61);
 }
 
 .in-title .see-deals {
