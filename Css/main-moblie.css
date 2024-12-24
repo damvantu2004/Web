@@ -69,7 +69,7 @@ html {
         /* background-color: #FF9B42; */
         padding: 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 80px;
     }
 
@@ -87,16 +87,32 @@ html {
         display: flex;
     }
 
-    .box-icon .box-search, .box-heart, .box-cart {
-        width: auto;
-        display: none;
-    }
+    
 
-    .box-icon .box-user {
+    .box-icon .box-user,.box-search, .box-heart, .box-cart {
         display: flex;
         justify-content: flex-end;
     }
-
+    .search {
+        font-size: 13px;
+        transition: 1s;
+    }
+    
+    .user {
+        font-size: 13px;
+        transition: 1s;
+    }
+    
+    .heart {
+        font-size: 13px;
+        transition: 1s;
+    }
+    
+    .cart {
+        font-size: 13px;
+        transition: 1s;
+    }
+    
     .banner {
         width: 100%;
         height: 352px;
