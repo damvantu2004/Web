@@ -16,21 +16,24 @@ html {
 .box-menu-mobile {
     display: none;
 }
-/* .header1 {
-    vertical-align: middle;
-} */
 
-.header1 .content .box-menu {
-    display: none;
-}
-.header1 .content {
-    /* background-color: #FF9B42; */
-    padding: 0;
-    display: flex;
-    justify-content: space-between; /* căn giữa nội dung header*/
-    gap: 80px;
-}
+
+
 @media screen and (max-width: 1320px) {
+    /* .header1 {
+    vertical-align: middle; /* căn phần tử theo chiều dọc giữa các phần tử liền kề trong một container */
+   /* }*/
+
+    .header1 .content .box-menu {
+        display: none;
+    }
+    .header1 .content {
+        /* background-color: #FF9B42; */
+        padding: 0;
+        display: flex;
+        justify-content: space-between; /* căn giữa nội dung header*/
+        gap: 80px;
+    }
     .header {
         vertical-align: middle;
     }
