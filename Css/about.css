@@ -20,11 +20,13 @@ html {
     margin-bottom: 10px;
     background-color: aqua;
     padding: 80px 0 90px 0;
-    background:rgb(20, 8, 8) ;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/008/325/520/large_2x/white-abstract-background-design-geometric-wallpaper-poster-landing-page-vector.jpg');
-    background-size: cover;
-    background-position: center ;
+    background: rgb(217, 215, 215);
+   
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .box-banner-about .in-banner-about {
     width: 100%;
@@ -43,7 +45,7 @@ html {
 
 .in-banner-about .box-path-about {
     font-size: 13px;
-    color: var(--color-text);
+    color:black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +53,7 @@ html {
 }
 
 .box-path-about .icon i {
-    color: #868686;
+    color: #030000;
     /* width: 17px; */
     margin-left: 0;
 }
@@ -105,7 +107,7 @@ html {
 
 .in-introduce .on-title p {
     font-size: 14px;
-    color: var(--color-text);
+    color:#030000;
 }
 
 .box-banner-about-2 {
