@@ -12,29 +12,34 @@
   <link rel="stylesheet" href="../../Css/product.css">
   <link rel="stylesheet" href="../../Css/main-moblie.css">
   <link rel="stylesheet" href="../../Css/main.css">
-
 </head>
- <body>
+<body>
     <div class="header">
         <div class="content">
             <div class="box-menu-mobile">
-                <button>
+                <button onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <div class="dropdown">
+                    <a href="../index.html" class="hover-a">Trang chủ</a>
+                    <a href="shop.html" class="hover-a">Cửa hàng</a>
+                    <a href="" class="hover-a">Về chúng tôi</a>
+                    <a href="blog.html" class="hover-a">Blog</a>
+                </div>
             </div>
-            <nav class="box-menu">
+            <nav class="box-menu" id="menu">
                 <ul class="all-list-menu">
                     <li>
                         <a href="../../index.html" class="hover-a">Trang chủ</a>
                     </li>
                     <li class="padding-list-menu">
-                        <a href="../Shop.html" class="hover-a">Cửa hàng</a>
+                        <a href="../../Page/shop.html" class="hover-a">Cửa hàng</a>
                     </li>
                     <li class="padding-list-menu">
-                        <a href="../about.html" class="hover-a">Về chúng tôi</a>
+                        <a href="../../Page/about.html" class="hover-a">Về chúng tôi</a>
                     </li>
                     <li class="padding-list-menu">
-                        <a href="../blog.html" class="hover-a">Blog</a>
+                        <a href="../../Page/blog.html" class="hover-a">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -55,8 +60,9 @@
                 <a href="" class="box-heart">
                     <i class="fa-regular fa-heart heart"></i>
                 </a>
-                <a href="" class="box-cart">
+                 <a href="../giohang.html" class="box-cart">
                     <i class="fa-solid fa-cart-shopping cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
                 </a>
             </div>
         </div>
@@ -66,7 +72,7 @@
         Toàn bộ sản phẩm
     </a>
     <a href="#">
-        Ghế &amp; Sofa
+        Ghế & Sofa
     </a>
     <a href="#">
         Nội thất
@@ -89,13 +95,13 @@
             <div class="col-12 col-md-6">
              
                 <div class="image-section">
-                    <img id="main-image" alt="Kayra Queen Storage Bed - Ivory Bouclé" height="500" src="../../Picture/Product/sanpham5_1.webp">
+                    <img id="main-image" alt="Kayra Queen Storage Bed - Ivory Bouclé" height="500" src="../../Picture/Product/sanpham10_1.webp">
                 </div>
                 <div class="image-section1 d-flex justify-content-center flex-wrap mt-3">
-                    <img alt="" height="100" src="../../Picture/Product/sanpham5_1.webp" width="100"  onclick="changeMainImage(this)">
-                    <img alt="" height="100" src="../../Picture/Product/sanpham5_2.webp" width="100" onclick="changeMainImage(this)">
-                    <img alt="" height="100" src="../../Picture/Product/sanpham5_3.webp" width="100" onclick="changeMainImage(this)">
-                    <img alt="" height="100" src="../../Picture/Product/sanpham5_4.webp" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham10_1.webp" width="100"  onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham10_2.webp" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham10_3.webp" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham10_4.webp" width="100" onclick="changeMainImage(this)">
               </div>
             </div>
   
@@ -103,15 +109,15 @@
         <!-- Details Section -->
         <div class="col-12 col-md-6">
             <div class="details-section">
-                <h1>Bàn ăn tròn Adel - Gỗ sồi trắng P5</h1>
-                <div class="price">160.000.000 VND</div>
+                <h1 id="product-name">Ghế Lounge 28" - Đan liễu nhựa P10</h1>
+                <div class="price" id="product-price">9.000.000 VND</div>
                 <div class="rating">
-                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                    <a href="#">1 đánh giá</a>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <a href="#">0 đánh giá</a>
                 </div>
 
                 <div class="detail-section">
@@ -133,26 +139,26 @@
                     </div>
                 </div>
 
-                <button class="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+                <button class="add-to-cart" onclick="addToCart()">THÊM VÀO GIỎ HÀNG</button>
                 <div class="info"><i class="fas fa-truck"></i><span>Vận chuyển tới <a href="#">Đống Đa, Hà Nội</a>: 31 tháng 10 - 19 tháng 11</span></div>
                 <div class="info"><i class="fas fa-check-circle"></i><span>Trong kho và sẵn sàng vận chuyển</span></div>
                 <div class="info"><i class="fas fa-undo"></i><span><a href="#">Bảo hành trong 30 ngày</a></span></div>
-                <div class="info"><i class="fas fa-dollar-sign"></i><span><a href="#">Trả góp</a> Thấp nhất 16.000.000 VND/Tháng</span></div>
+                <div class="info"><i class="fas fa-dollar-sign"></i><span><a href="#">Trả góp</a> Thấp nhất 900.000 VND/Tháng</span></div>
             </div>
         </div>
         <div class="product-description">
             <h2>Mô tả</h2>
             <p>
-                Một hình thức đơn giản nhưng vượt xa tổng thể các yếu tố cấu thành, Bàn ăn tròn Adel có kiểu dáng điêu khắc táo bạo nhưng không hề quá phô 
-                trương. Mặt bàn tròn tạo ra không gian ăn uống thân mật, đồng thời vẫn đảm bảo đủ chỗ cho đầu gối và khuỷu tay. Cấu trúc chân rỗng giúp 
-                bàn Adel dễ dàng di chuyển. Với lớp hoàn thiện gỗ sồi trắng tối giản, Adel tỏa ra một sự hiện diện nhẹ nhàng, khiến nó trở thành sự bổ 
-                sung hoàn hảo cho bữa tiệc tối tiếp theo của bạn.
+                Một chiếc ghế thư giãn ấn tượng. Chất liệu mây tổng hợp và phong cách Boho của Calova đảm bảo rằng ngay cả khi bạn chỉ đang thư giãn, 
+                bạn vẫn thư giãn một cách đầy phong cách.
             </p>
             <h3>Tính năng</h3>
             <ul>
-                <li>Được làm từ gỗ tự nhiên và gỗ veneer</li>
-                <li>Dành cho bốn người ngồi</li>
-                <li>Gỗ tự nhiên sẽ có sự khác biệt về màu sắc và kết cấu — không có hai sản phẩm nào giống hệt nhau</li>
+                <li>Chân ghế làm từ gỗ keo nguyên khối.</li>
+                <li>Khung nhôm phủ sơn tĩnh điện.</li>
+                <li>Cấu trúc làm từ mây tổng hợp.</li>
+                <li>Phù hợp sử dụng cả trong nhà và ngoài trời.</li>
+                <li>Cần lắp ráp một phần (khoảng 15 phút).</li>
             </ul>
         </div>        
     </div>
@@ -168,6 +174,31 @@
         siblings.forEach((btn) => btn.classList.remove('active'));
         element.classList.add('active');
     }
+   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartCount = 0;
+
+    function addToCart() {
+        const productName = document.getElementById("product-name").textContent;
+        const productPrice = document.getElementById("product-price").textContent;
+
+        const product = {
+            name: productName,
+            price: productPrice,
+            quantity: 1
+        };
+
+        cart.push(product);
+         localStorage.setItem('cart', JSON.stringify(cart)); // Lưu vào local storage
+        cartCount++;
+        updateCartDisplay();
+
+        alert("Sản phẩm đã được thêm vào giỏ hàng!");
+    }
+     function updateCartDisplay() {
+         let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.getElementById('cart-count').textContent = totalQuantity;
+    }
+   updateCartDisplay()
 </script>
 
 
@@ -486,90 +517,4 @@
     </div>
     <div class="contact">
         <h2>DỊCH VỤ</h2>
-        <div class="in">
-            <a href="">
-                <div>Bán hàng</div>
-            </a>
-            <a href="">
-                <div>Giao nhanh</div>
-            </a>
-            <a href="">
-                <div>Thiết kế</div>
-            </a>
-            <a href="">
-                <div>Làm mới đồ dùng</div>
-            </a>
-            <a href="">
-                <div>Sửa chữa</div>
-            </a>
-            <a href="">
-                <div>Thẻ quà tặng</div>
-            </a>
-        </div>
-    </div>
-    <div class="contact">
-        <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
-        <div class="in">
-            <div style="margin-bottom: 25px;">Nhập email của bạn bên dưới.
-                <br>
-                về bộ sưu tập mới và ra mắt sản phẩm.
-            </div>
-            <div class="box-email">
-                <input type="text" placeholder="Email adress...">
-                <button type="submit">
-                    <i class="fa-solid fa-envelope"></i>
-                </button>
-            </div>
-            <div class="icon-contact">
-                <ul>
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-dribbble"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-behance"></i>
-                        </a>
-                    </li>                     
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="box-second-footer">
-    <div class="first-box">
-        <div class="title">
-            2024.
-        </div>
-    </div>
-    <div class="second-box">
-        <div class="box-bank">
-            <img src="Picture/payments-1.png" alt="">
-        </div>
-    </div>
-</div>
-<!-- <div style="margin-bottom: 600px;"></div> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0A/2PMh4EVxf/c4z9smh7g1gXvhb6z42C4FmbdF7V8is9Fcm" crossorigin="anonymous"></script>
-
-</body>
-</html>
-<script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
-<script src="../../js/main.js"></script>
-<script src="../../js/product.js"></script>
-
-
-
-
-
-
+        <div

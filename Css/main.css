@@ -1072,3 +1072,7 @@ body {
     justify-content: flex-end;
 }
 
+.fw-light {
+    font-size: 35px;
+}
+
