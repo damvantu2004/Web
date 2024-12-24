@@ -16,11 +16,17 @@ html {
 .header {
     margin-bottom: 50px;
 }
+
+.hover-a {
+text-decoration: none;
+color: var(--color-text-1);
+}
 .container {
     width: 100%;
     min-width: 1px;
     padding: 0 30px;
     display: flex;
+    margin-top: 50px;
 }
 
 .container .all-box-sidebar {
@@ -349,3 +355,23 @@ html {
     color: var(--color-text);
     opacity: 80%;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .all-box-sidebar {
+        width: 100%;
+    }
+
+    .container .box-content-blog {
+        width: 100%;
+    }
+
+    .blog-2 .box-1 {
+        width: 100%;
+    }
+    
+}
+
