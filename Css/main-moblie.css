@@ -78,8 +78,8 @@ html {
     }
 
     .box-logo .logo a img {
-        width: 150px;
-        height: 48px;
+        width: 170px;
+        height: 51px;
     }
 
     .box-icon {
@@ -327,15 +327,15 @@ html {
     /* footer */
     .box-first-footer {
         width: 100%;
-        min-height: 950px;
+        min-height: 600px;
         padding: 55px 0 40px 0;
-        margin-top: 10px;     
+        margin-top: 2px;     
         gap: 20px;   
     }
 
     .contact {
-        width: 317.750px;
-        height: 120px;
+        width: 227.750px;
+        height: 60px;
     }
 
     .box-second-footer .first-box .title {
@@ -349,6 +349,6 @@ html {
 
     .box-second-footer {
         width: 100%;
-        height: 115px;
+        height: 85px;
     }
 }
