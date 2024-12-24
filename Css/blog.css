@@ -13,7 +13,9 @@ html {
     --color-text-1: #585858;
     --Hover-icon: #FF9B42;
 }
-
+.header {
+    margin-bottom: 50px;
+}
 .container {
     width: 100%;
     min-width: 1px;
@@ -26,6 +28,7 @@ html {
     min-height: 1px;
     padding: 0 15px;
 }
+
 
 .container .box-search {
     width: 100%;
