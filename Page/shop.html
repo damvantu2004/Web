@@ -64,13 +64,45 @@
                 <a href="#" class="box-heart" title="Favorites">
                     <i class="fa-regular fa-heart heart"></i>
                 </a>
-                <a href="#" class="box-cart" title="Cart">
+                <a href="../Page/giohang.html" class="box-cart" title="Cart">
                     <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
-            
         </div>
     </div>
+    <!-- Cart -->
+    <section class="cart">
+        <h2>Cart</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="../Picture/Product/sanpham1_1.webp" alt="">Sven 107" Ghế sofa vuông góc P1</td>
+                        <td>45.000.000 VND</td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xoá</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="../Picture/Product/sanpham2_1.webp" alt="">Sven 107" Ghế sofa vuông góc P1</td>
+                        <td>45.000.000 VND</td>
+                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xoá</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price-total">
+                <p style="font-weight: bold;">Tổng tiền:<span>45.000.000 VND</span></p>
+            </div>
+        </form>
+    </section>
     <div class="box-banner-shop">
         <div class="in-box-banner">
             <div class="text-title-banner">
@@ -364,16 +396,16 @@
                 <div class="new-product-1">
                     <div class="pic-product-1">
                         <a href="product/product1.html">
-                            <img id="Pic-product-1" src="https://cdn-images.article.com/products/SKU24664/2890x1500/image159623.jpg?w=2600&q=60&fm=webp&fit=max" alt="">
+                            <img id="Pic-product-1" src="../Picture/Product/sanpham1_3.webp" alt="">
                             <script>
                                 let newProduct = document.getElementById('Pic-product-1');
                                 
                                 newProduct.addEventListener('mouseout', function() {
-                                    newProduct.src = 'https://cdn-images.article.com/products/SKU24664/2890x1500/image159623.jpg?w=2600&q=60&fm=webp&fit=max';
+                                    newProduct.src = '../Picture/Product/sanpham1_3.webp';
                                 });
 
                                 newProduct.addEventListener('mouseover', function() {
-                                    newProduct.src = 'https://cdn-images.article.com/products/SKU24664/2890x1500/image159624.jpg?w=2600&q=60&fm=webp&fit=max';
+                                    newProduct.src = '../Picture/Product/sanpham1_1.webp';
                                 });
                             </script>
                             <div class="box-icon-new-product">
@@ -386,9 +418,9 @@
                     <div class="box-star" style="width: 100%; height: 23px;">
                         <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
                         <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
                         <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(1 nhận xét)</span>
                     </div>
                     <div class="title-new-product">
@@ -401,16 +433,16 @@
                 <div class="new-product-1">
                     <div class="pic-product-1">
                         <a href="product/product2.html">
-                            <img id="Pic-product-2" src="https://cdn-images.article.com/products/SKU17919/2890x1500/image120802.jpg?w=2600&q=60&fm=webp&fit=max" alt="">
+                            <img id="Pic-product-2" src="../Picture/Product/sanpham2_3.webp" alt="">
                             <script>
                                 let newProduct_1 = document.getElementById('Pic-product-2');
                                 
                                 newProduct_1.addEventListener('mouseout', function() {
-                                    newProduct_1.src = 'https://cdn-images.article.com/products/SKU17919/2890x1500/image120802.jpg?w=2600&q=60&fm=webp&fit=max';
+                                    newProduct_1.src = '../Picture/Product/sanpham2_3.webp';
                                 });
 
                                 newProduct_1.addEventListener('mouseover', function() {
-                                    newProduct_1.src = 'https://cdn-images.article.com/products/SKU17919/2890x1500/image120803.jpg?w=2600&q=60&fm=webp&fit=max';
+                                    newProduct_1.src = '../Picture/Product/sanpham2_1.webp';
                                 });
                             </script>
                             <div class="box-icon-new-product">
@@ -421,33 +453,33 @@
                         </a>
                     </div>
                     <div class="box-star" style="width: 100%; height: 23px;">
-                        <i style="margin-left: 0;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(1 nhận xét)</span>
+                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(3 đánh giá)</span>
                     </div>
                     <div class="title-new-product">
-                        <a href="product/product2.html">Ghế ăn Nosh </a>
+                        <a href="product/product2.html">Ghế Ăn Tiệc - Xanh Chạng Vạng P2</a>
                     </div>
                     <div style="font-size: 16px; color: rgb(170, 167, 167);">
-                        9.200.000 VND – 10.000.000 VND
+                        6.000.000 VND
                     </div>
                 </div>
                 <div class="new-product-1">
                     <div class="pic-product-1">
-                        <a href="">
-                            <img id="Pic-product-3" src="../Picture/Shop/products-13-600x600.jpg" alt="">
+                        <a href="product/product3.html">
+                            <img id="Pic-product-3" src="../Picture/Product/sanpham3_3.webp" alt="">
                             <script>
                                 let newProduct_2 = document.getElementById('Pic-product-3');
                                 
                                 newProduct_2.addEventListener('mouseout', function() {
-                                    newProduct_2.src = '../Picture/Shop/products-13-600x600.jpg';
+                                    newProduct_2.src = '../Picture/Product/sanpham3_3.webp';
                                 });
 
                                 newProduct_2.addEventListener('mouseover', function() {
-                                    newProduct_2.src = '../Picture/Shop/products-13-1-600x600.jpg';
+                                    newProduct_2.src = '../Picture/Product/sanpham3_1.webp';
                                 });
                             </script>
                             <div class="box-icon-new-product">
@@ -458,33 +490,33 @@
                         </a>
                     </div>
                     <div class="box-star" style="width: 100%; height: 23px;">
-                        <i style="margin-left: 0;" class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(0 nhận xét)</span>
+                        <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(6 đánh giá)</span>
                     </div>
                     <div class="title-new-product">
-                        <a href="">Kệ Trái Phiếu – Gắn Trần</a>
+                        <a href="product/product3.html">Đèn bàn pha lê - Pompeii Grey P3</a>
                     </div>
                     <div style="font-size: 16px; color: rgb(170, 167, 167);">
-                        5.000.000 VND
+                        2.000.000 VND
                     </div>
                 </div>
                 <div class="new-product-1">
                     <div class="pic-product-1">
-                        <a href="">
-                            <img id="Pic-product-4" src="../Picture/Shop/products-17-6-600x600.jpg" alt="">
+                        <a href="product/product4.html">
+                            <img id="Pic-product-4" src="../Picture/Product/sanpham4_3.webp" alt="">
                             <script>
                                 let newProduct_3 = document.getElementById('Pic-product-4');
                                 
                                 newProduct_3.addEventListener('mouseout', function() {
-                                    newProduct_3.src = '../Picture/Shop/products-17-6-600x600.jpg';
+                                    newProduct_3.src = '../Picture/Product/sanpham4_3.webp';
                                 });
 
                                 newProduct_3.addEventListener('mouseover', function() {
-                                    newProduct_3.src = '../Picture/Shop/products-17-7-600x600.jpg';
+                                    newProduct_3.src = '../Picture/Product/sanpham4_1.webp';
                                 });
                             </script>
                             <div class="box-icon-new-product">
@@ -495,34 +527,34 @@
                         </a>
                     </div>
                     <div class="box-star" style="width: 100%; height: 23px;">
-                        <i style="margin-left: 0;" class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(0 nhận xét)</span>
+                        <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(3 đánh giá)</span>
                     </div>
                     <div class="title-new-product">
-                        <a href="">Đèn tường đọc sách Caravaggio</a>
+                        <a href="product/product4.html">Đèn bàn ngắn Ando - Trắng sáp P4</a>
                     </div>
                     <div style="font-size: 16px; color: rgb(170, 167, 167);">
-                        <del>9.000.000 VND</del> 
-                        <span style="color: red;">8.000.000 VND</span>
+                        <del>3.000.000 VND</del> 
+                        <span style="color: red;">2.300.000 VND</span>
                     </div>
                 </div>
                 <div class="new-product-1">
                     <div class="pic-product-1">
-                        <a href="">
-                            <img id="Pic-product-5" src="../Picture/Shop/products-17-2-600x600.jpg" alt="">
+                        <a href="product/product5.html">
+                            <img id="Pic-product-5" src="../Picture/Product/sanpham5_3.webp" alt="">
                             <script>
                                 let newProduct_4 = document.getElementById('Pic-product-5');
                                 
                                 newProduct_4.addEventListener('mouseout', function() {
-                                    newProduct_4.src = '../Picture/Shop/products-17-2-600x600.jpg';
+                                    newProduct_4.src = '../Picture/Product/sanpham5_3.webp';
                                 });
 
                                 newProduct_4.addEventListener('mouseover', function() {
-                                    newProduct_4.src = '../Picture/Shop/products-17-3-600x600.jpg';
+                                    newProduct_4.src = '../Picture/Product/sanpham5_1.webp';
                                 });
                             </script>
                             <div class="box-icon-new-product">
@@ -533,15 +565,15 @@
                         </a>
                     </div>
                     <div class="box-star" style="width: 100%; height: 23px;">
-                        <i style="margin-left: 0;" class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(0 nhận xét)</span>
+                        <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(1 đánh giá)</span>
                     </div>
                     <div class="title-new-product">
-                        <a href="">Ghế Vỏ CH07 – Da</a>
+                        <a href="product/product5.html">Bàn ăn tròn Adel cho 4 người - Gỗ sồi trắng P5</a>
                     </div>
                     <div style="font-size: 16px; color: rgb(170, 167, 167);">
                         <del>4.800.000 VND</del> 
@@ -611,10 +643,10 @@
                     <div class="box-star" style="width: 100%; height: 23px;">
                         <i style="color: #fcad02; margin-left: 0;" class="fa-solid fa-star"></i>
                         <i style="color: #fcad02;" class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(1 nhận xét)</span>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                        <span style="margin-left: 5px; color: rgb(201, 201, 201); font-size: 12px;">(1 đánh giá)</span>
                     </div>
                     <div class="title-new-product">
                         <a href="">Sven 107" Ghế sofa vuông góc P1</a>
