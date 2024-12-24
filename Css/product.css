@@ -177,15 +177,15 @@
   gap: 10px;
 }
 .details-section .add-to-cart {
-    background-color: #b0b0b0;
+    background-color: #ca2929;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 
