@@ -426,15 +426,6 @@ html {
     border-color: #343232; /* Màu viền khi ô tìm kiếm được chọn */
 }
 
-.box-search {
-    position: absolute;
-    right: 10px; /* Căn giữa biểu tượng tìm kiếm */
-    top: 50%;
-    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
-    text-decoration: none;
-    color: #787878; /* Màu cho biểu tượng tìm kiếm */
-}
-
 .box-user, .box-heart, .box-cart {
     margin-left: 15px; /* Khoảng cách giữa các biểu tượng */
     text-decoration: none;
@@ -614,37 +605,4 @@ html {
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s ease;
-}
-
-/* -----------------------Cart-------------------- */
-.cart {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.cart h2 {
-    margin-bottom: 20px;
-}
-
-.cart table {
-    width: 100%;
-}
-
-.cart table thead tr th:first-child {
-    text-align: left;
-}
-
-.cart table tr td {
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
-}
-
-.cart table thead tr th:last-child {
-    text-align: right;
-}
-
-.cart table tbody tr td:last-child {
-    text-align: right;
 }
