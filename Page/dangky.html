@@ -17,8 +17,7 @@
                 <div class="card shadow bg-glass">
                     <div class="card-body">
                         <h2 class="text-center mb-4">Đăng Ký</h2>
-                        <p class="text-center">Sử dụng email của bạn để tạo tài khoản.</p>
-
+                         <p class="text-center">Sử dụng email hoặc số điện thoại của bạn để tạo tài khoản.</p>
                         <!-- Form đăng ký -->
                         <form id="registrationForm">
                             <div class="mb-3">
@@ -28,11 +27,11 @@
                                     <input id="fullname" type="text" class="form-control" placeholder="Họ và tên" required>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
+                             <div class="mb-3">
+                                <label for="emailOrPhone" class="form-label">Email/Số điện thoại</label>
                                 <div class="input-group">
-                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                                    <input id="email" type="email" class="form-control" placeholder="Email" required>
+                                     <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                    <input id="emailOrPhone" type="text" class="form-control" placeholder="Email/Số điện thoại" required>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -61,49 +60,52 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('signInButton').addEventListener('click', function () {
-            const fullname = document.getElementById('fullname').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const password = document.getElementById('password').value.trim();
-            const confirmPassword = document.getElementById('confirmPassword').value.trim();
+   <script>
+    document.getElementById('signInButton').addEventListener('click', function () {
+        const fullname = document.getElementById('fullname').value.trim();
+        const emailOrPhone = document.getElementById('emailOrPhone').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const confirmPassword = document.getElementById('confirmPassword').value.trim();
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Biểu thức kiểm tra email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex for email
+        const phoneRegex = /^\d{10}$/;  // Regex for 10-digit phone
 
-            if (!fullname) {
-                alert('Vui lòng nhập họ và tên.');
+        if (!fullname) {
+            alert('Vui lòng nhập họ và tên.');
+            return;
+        }
+
+         if (!emailOrPhone) {
+           alert('Vui lòng nhập email hoặc số điện thoại.');
+           return;
+       }
+
+
+        if (!password) {
+            alert('Vui lòng nhập mật khẩu.');
+            return;
+        }
+
+        if (password.length < 6) {
+            alert('Mật khẩu phải có ít nhất 6 ký tự.');
+            return;
+        }
+
+         if (password !== confirmPassword) {
+            alert('Mật khẩu xác nhận không khớp.');
+            return;
+         }
+
+         if (!emailRegex.test(emailOrPhone) && !phoneRegex.test(emailOrPhone)){
+              alert('Vui lòng nhập đúng định dạng email hoặc số điện thoại (10 chữ số).')
                 return;
-            }
+         }
 
-            if (!email) {
-                alert('Vui lòng nhập email.');
-                return;
-            }
+          alert('Đăng ký thành công! Bây giờ bạn có thể đăng nhập.');
+          window.location.href = 'login.html';
+    });
+  </script>
 
-            if (!emailRegex.test(email)) {
-                alert('Vui lòng nhập đúng định dạng email.');
-                return;
-            }
-
-            if (!password) {
-                alert('Vui lòng nhập mật khẩu.');
-                return;
-            }
-
-            if (password.length < 6) {
-                alert('Mật khẩu phải có ít nhất 6 ký tự.');
-                return;
-            }
-
-            if (password !== confirmPassword) {
-                alert('Mật khẩu xác nhận không khớp.');
-                return;
-            }
-
-            alert('Đăng ký thành công! Bây giờ bạn có thể đăng nhập.');
-            window.location.href = 'login.html';
-        });
-    </script>
     <script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
 </body>
 </html>
