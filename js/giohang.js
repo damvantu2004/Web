@@ -57,7 +57,7 @@
                  const productImage = document.createElement('img');
                  productImage.src = getProductImage(item.name); // Lấy đường dẫn ảnh từ hàm getProductImage
                  productImage.alt = item.name; // Thêm thuộc tính alt cho hình ảnh
-               productImageContainer.appendChild(productImage); // Thêm hình ảnh vào container
+                 productImageContainer.appendChild(productImage); // Thêm hình ảnh vào container
                  cartItemDiv.appendChild(productImageContainer); // Thêm container hình ảnh vào div sản phẩm
 
                  // Tạo div chứa thông tin sản phẩm
