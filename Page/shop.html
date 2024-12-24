@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">    <link rel="stylesheet" href="../Css/main.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">   
+     <link rel="stylesheet" href="../Css/main.css">
     <link rel="stylesheet" href="../Css/main-moblie.css">
     <link rel="stylesheet" href="../Css/Shop.css">
     <title>Cửa hàng</title>
@@ -53,7 +54,7 @@
             </div>
             <div class="box-icon">
                 <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+                 
                     <a href="#" class="box-search">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </a>
@@ -65,44 +66,12 @@
                     <i class="fa-regular fa-heart heart"></i>
                 </a>
                 <a href="../Page/giohang.html" class="box-cart" title="Cart">
-                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-solid fa-cart-shopping cart" style="padding-bottom: 29px;"></i>
                 </a>
             </div>
         </div>
     </div>
-    <!-- Cart -->
-    <section class="cart">
-        <h2>Cart</h2>
-        <form action="">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Giá</th>
-                        <th>Số lượng</th>
-                        <th>Chọn</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="../Picture/Product/sanpham1_1.webp" alt="">Sven 107" Ghế sofa vuông góc P1</td>
-                        <td>45.000.000 VND</td>
-                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
-                        <td style="cursor: pointer;">Xoá</td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="../Picture/Product/sanpham2_1.webp" alt="">Sven 107" Ghế sofa vuông góc P1</td>
-                        <td>45.000.000 VND</td>
-                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
-                        <td style="cursor: pointer;">Xoá</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div style="text-align: right;" class="price-total">
-                <p style="font-weight: bold;">Tổng tiền:<span>45.000.000 VND</span></p>
-            </div>
-        </form>
-    </section>
+    
     <div class="box-banner-shop">
         <div class="in-box-banner">
             <div class="text-title-banner">
@@ -397,17 +366,7 @@
                     <div class="pic-product-1">
                         <a href="product/product1.html">
                             <img id="Pic-product-1" src="../Picture/Product/sanpham1_3.webp" alt="">
-                            <script>
-                                let newProduct = document.getElementById('Pic-product-1');
-                                
-                                newProduct.addEventListener('mouseout', function() {
-                                    newProduct.src = '../Picture/Product/sanpham1_3.webp';
-                                });
-
-                                newProduct.addEventListener('mouseover', function() {
-                                    newProduct.src = '../Picture/Product/sanpham1_1.webp';
-                                });
-                            </script>
+                          
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -434,17 +393,7 @@
                     <div class="pic-product-1">
                         <a href="product/product2.html">
                             <img id="Pic-product-2" src="../Picture/Product/sanpham2_3.webp" alt="">
-                            <script>
-                                let newProduct_1 = document.getElementById('Pic-product-2');
-                                
-                                newProduct_1.addEventListener('mouseout', function() {
-                                    newProduct_1.src = '../Picture/Product/sanpham2_3.webp';
-                                });
-
-                                newProduct_1.addEventListener('mouseover', function() {
-                                    newProduct_1.src = '../Picture/Product/sanpham2_1.webp';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -471,17 +420,7 @@
                     <div class="pic-product-1">
                         <a href="product/product3.html">
                             <img id="Pic-product-3" src="../Picture/Product/sanpham3_3.webp" alt="">
-                            <script>
-                                let newProduct_2 = document.getElementById('Pic-product-3');
-                                
-                                newProduct_2.addEventListener('mouseout', function() {
-                                    newProduct_2.src = '../Picture/Product/sanpham3_3.webp';
-                                });
-
-                                newProduct_2.addEventListener('mouseover', function() {
-                                    newProduct_2.src = '../Picture/Product/sanpham3_1.webp';
-                                });
-                            </script>
+                          
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -508,17 +447,7 @@
                     <div class="pic-product-1">
                         <a href="product/product4.html">
                             <img id="Pic-product-4" src="../Picture/Product/sanpham4_3.webp" alt="">
-                            <script>
-                                let newProduct_3 = document.getElementById('Pic-product-4');
-                                
-                                newProduct_3.addEventListener('mouseout', function() {
-                                    newProduct_3.src = '../Picture/Product/sanpham4_3.webp';
-                                });
-
-                                newProduct_3.addEventListener('mouseover', function() {
-                                    newProduct_3.src = '../Picture/Product/sanpham4_1.webp';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -546,17 +475,7 @@
                     <div class="pic-product-1">
                         <a href="product/product5.html">
                             <img id="Pic-product-5" src="../Picture/Product/sanpham5_3.webp" alt="">
-                            <script>
-                                let newProduct_4 = document.getElementById('Pic-product-5');
-                                
-                                newProduct_4.addEventListener('mouseout', function() {
-                                    newProduct_4.src = '../Picture/Product/sanpham5_3.webp';
-                                });
-
-                                newProduct_4.addEventListener('mouseover', function() {
-                                    newProduct_4.src = '../Picture/Product/sanpham5_1.webp';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -584,17 +503,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-6" src="../Picture/Shop/products-10-4-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_5 = document.getElementById('Pic-product-6');
-                                
-                                newProduct_5.addEventListener('mouseout', function() {
-                                    newProduct_5.src = '../Picture/Shop/products-10-4-600x600.jpg';
-                                });
-
-                                newProduct_5.addEventListener('mouseover', function() {
-                                    newProduct_5.src = '../Picture/Shop/products-10-5-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -622,17 +531,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-7" src="../Picture/Shop/products-10-1-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_12 = document.getElementById('Pic-product-7');
-                                
-                                newProduct_12.addEventListener('mouseout', function() {
-                                    newProduct_12.src = '../Picture/Shop/products-10-1-600x600.jpg';
-                                });
-
-                                newProduct_12.addEventListener('mouseover', function() {
-                                    newProduct_12.src = '../Picture/Shop/products-10-2-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -659,17 +558,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-8" src="../Picture/Shop/products-15-6-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_13 = document.getElementById('Pic-product-8');
-                                
-                                newProduct_13.addEventListener('mouseout', function() {
-                                    newProduct_13.src = '../Picture/Shop/products-15-6-600x600.jpg';
-                                });
-
-                                newProduct_13.addEventListener('mouseover', function() {
-                                    newProduct_13.src = '../Picture/Shop/products-15-7-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -696,17 +585,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-9" src="../Picture/Shop/products-13-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_14 = document.getElementById('Pic-product-9');
-                                
-                                newProduct_14.addEventListener('mouseout', function() {
-                                    newProduct_14.src = '../Picture/Shop/products-13-600x600.jpg';
-                                });
-
-                                newProduct_14.addEventListener('mouseover', function() {
-                                    newProduct_14.src = '../Picture/Shop/products-13-1-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -733,17 +612,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-10" src="../Picture/Shop/products-17-6-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_15 = document.getElementById('Pic-product-10');
-                                
-                                newProduct_15.addEventListener('mouseout', function() {
-                                    newProduct_15.src = '../Picture/Shop/products-17-6-600x600.jpg';
-                                });
-
-                                newProduct_15.addEventListener('mouseover', function() {
-                                    newProduct_15.src = '../Picture/Shop/products-17-7-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -809,17 +678,7 @@
                     <div class="pic-product-1">
                         <a href="">
                             <img id="Pic-product-12" src="../Picture/Shop/products-10-4-600x600.jpg" alt="">
-                            <script>
-                                let newProduct_17 = document.getElementById('Pic-product-12');
-                                
-                                newProduct_17.addEventListener('mouseout', function() {
-                                    newProduct_17.src = '../Picture/Shop/products-10-4-600x600.jpg';
-                                });
-
-                                newProduct_17.addEventListener('mouseover', function() {
-                                    newProduct_17.src = '../Picture/Shop/products-10-5-600x600.jpg';
-                                });
-                            </script>
+                           
                             <div class="box-icon-new-product">
                                 <i style="font-size: 19px;" id="cart-Product" class="fa-solid fa-cart-shopping"></i>
                                 <i style="font-size: 18px;" id="heart-Product" class="fa-solid fa-heart"></i>
@@ -965,7 +824,7 @@
             </div>
         </div>
     </div>
-    <script src="../js/search.js"></script>
+    <script src="../js/giohang.js"></script>
 </body>
 </html>
 <script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
