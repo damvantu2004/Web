@@ -728,7 +728,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    background-color: #f2f2f2;
 }
 
 .box-bg .box-img {
