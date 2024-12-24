@@ -1,0 +1,123 @@
+        /* CSS cho container chính của giỏ hàng */
+        .cart-container {
+          max-width: 1200px; /* Đặt độ rộng tối đa của container là 1200px */
+           margin: 0 auto; /* Căn giữa container theo chiều ngang */
+          padding: 20px; /* Tạo khoảng cách lề trong 20px */
+        
+           background-color: #fff; /* Đặt màu nền trắng cho container */
+         
+      }
+       /* CSS cho tiêu đề giỏ hàng */
+      .cart-container h2 {
+          margin-bottom: 20px; /* Tạo khoảng cách bên dưới tiêu đề */
+        font-size: 30px; /* Đặt kích thước chữ của tiêu đề là 30px */
+      }
+
+       /* CSS cho container của mỗi sản phẩm trong giỏ hàng */
+      .cart-item-container {
+          border-bottom: 1px solid #ddd; /* Tạo đường viền dưới mỗi item */
+          padding: 10px 0; /* Tạo khoảng cách lề trên và dưới cho item */
+          display: flex; /* Sử dụng flexbox để sắp xếp các item */
+          align-items: center; /* Căn giữa các item theo chiều dọc */
+          justify-content: space-between; /* Căn đều các item về hai phía */
+      }
+
+      /* Loại bỏ đường viền dưới ở sản phẩm cuối cùng trong giỏ hàng */
+      .cart-item-container:last-child {
+         border-bottom: none;
+      }
+      /* CSS cho container chứa hình ảnh sản phẩm */
+      .cart-item-image-container{
+           display: flex;
+          align-items: center;
+      }
+      /* CSS cho hình ảnh sản phẩm */
+     .cart-item-image-container img {
+          width: 80px; /* Đặt chiều rộng hình ảnh là 80px */
+          height: 80px; /* Đặt chiều cao hình ảnh là 80px */
+          margin-right: 15px; /* Tạo khoảng cách bên phải hình ảnh */
+          object-fit: cover; /* Căn chỉnh ảnh để không bị méo */
+      }
+       /* CSS cho thông tin sản phẩm */
+       .cart-item-info {
+         flex: 1; /* Cho phép phần tử này chiếm không gian thừa */
+         margin-right: 15px; /* Tạo khoảng cách bên phải thông tin sản phẩm */
+       }
+       /* CSS cho tiêu đề của sản phẩm */
+      .cart-item-info h3 {
+           margin: 0 0 5px; /* Không có khoảng cách lề trên, bên phải, bên trái và khoảng cách dưới là 5px */
+          font-size: 18px; /* Đặt kích thước chữ của tiêu đề sản phẩm là 18px */
+      }
+       /* CSS cho container của số lượng sản phẩm */
+        .cart-item-quantity {
+          display: flex; /* Sử dụng flexbox để sắp xếp */
+          align-items: center; /* Căn giữa theo chiều dọc */
+           margin-right: 15px; /* Khoảng cách lề phải */
+     }
+     /* CSS cho label của số lượng */
+      .cart-item-quantity label{
+            margin-right: 5px; /* Khoảng cách lề phải */
+            font-weight: bold; /* In đậm chữ */
+      }
+      /* CSS cho nút tăng giảm số lượng */
+       .cart-item-quantity button {
+            padding: 5px 10px; /* Khoảng cách nút */
+            border: 1px solid #ddd; /* Viền của nút */
+            background-color: white; /* Màu nền nút là trắng */
+              cursor: pointer; /* Hiển thị con trỏ chuột khi di vào nút */
+       }
+       /* CSS cho số lượng sản phẩm */
+      .cart-item-quantity span{
+           margin: 0 5px; /* Khoảng cách 2 bên số */
+       }
+     /* CSS cho nút xóa sản phẩm */
+      .cart-item-remove {
+         cursor: pointer; /* Hiện thị con trỏ chuột khi di vào nút */
+         font-size: 20px; /* Đặt kích thước icon là 20px */
+        color: red; /* Đặt màu icon là đỏ */
+         
+      }
+        /* CSS cho tổng tiền của giỏ hàng */
+       .cart-total {
+          display: flex; /* Sử dụng flexbox */
+          justify-content: flex-end; /* Để nội dung sang phải */
+         margin-top: 10px;
+          font-size: 20px; /* Đặt kích thước chữ của tổng tiền là 20px */
+           font-weight: bold; /* In đậm chữ */
+      }
+       /* CSS cho container chứa các button thanh toán và tiếp tục mua sắm */
+      .cart-actions{
+         display: flex; /* Sử dụng flexbox */
+         justify-content: flex-end; /* Để nội dung sang phải */
+        margin-top: 15px; /* Khoảng cách lề trên */
+      }
+        /* CSS chung cho button thanh toán và tiếp tục mua sắm */
+     .cart-actions button {
+       padding: 10px 15px; /* Khoảng cách nút */
+        border: none; /* Không viền */
+       border-radius: 5px; /* Góc bo tròn */
+        margin-left: 10px; /* Khoảng cách bên trái nút */
+         cursor: pointer; /* Hiện thị con trỏ chuột khi di vào nút */
+     }
+      /* CSS cho button thanh toán */
+       .cart-actions .btn-buy {
+         background-color: #333; /* Màu nền xám đậm */
+         color: white; /* Màu chữ trắng */
+       }
+       /* CSS cho button thanh toán khi di chuột vào */
+      .cart-actions .btn-buy:hover{
+          background-color: #ffa500; /* Màu nền cam khi hover */
+      }
+        /* CSS cho button tiếp tục mua sắm */
+        .cart-actions .btn-continue {
+            background-color: #ddd; /* Màu nền xám nhạt */
+           color: #333; /* Màu chữ xám đậm */
+      }
+        /* CSS cho button tiếp tục mua sắm khi di chuột vào */
+       .cart-actions .btn-continue:hover{
+          background-color: #ffa500; /* Màu nền cam khi hover */
+      }
+       /* Thêm hiệu ứng di chuột cho các nút + - và xóa  */
+      .cart-item-quantity button:hover, .cart-item-remove:hover {
+        color: #ffa500; /* Màu cam khi hover */
+      }
