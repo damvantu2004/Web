@@ -1,0 +1,131 @@
+
+ /* Global Styles */
+ html {
+    font-family: 'Questrial', sans-serif;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Titles */
+.title-1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+.title-2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 15px;
+    
+}
+
+/* Content */
+.content-1, .content-2 {
+    color: #3f3f3f;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+.card-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.card-content p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+    .title-1, .title-2 {
+        font-size: 2rem;
+    }
+    .content-1, .content-2 {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+    .title-1, .title-2 {
+        font-size: 1.8rem;
+    }
+    .content-1, .content-2 {
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .title-1, .title-2 {
+        font-size: 1.5rem;
+    }
+    .content-1, .content-2 {
+        font-size: 0.8rem;
+    }
+}
+
