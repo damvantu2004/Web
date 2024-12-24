@@ -141,7 +141,15 @@ firstImg_2.addEventListener('mouseout', function() {
     firstImg_2.src = "Picture/products-1-600x600.jpg";
 });
 // -----------------------------------------------
+let firstImg_3 = document.getElementById('Pic-4');
 
+firstImg_3.addEventListener('mouseover', function() {
+    firstImg_3.src = "Picture/image120833.webp";
+});
+
+firstImg_3.addEventListener('mouseout', function() {
+    firstImg_3.src = "Picture/down.jpg";
+});
 function toggleMenu() {
     const menu = document.querySelector('.box-menu-mobile');
     menu.classList.toggle('show');
