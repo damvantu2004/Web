@@ -17,7 +17,7 @@ html {
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1320px) {
     .header {
         vertical-align: middle;
     }
@@ -173,16 +173,16 @@ html {
         justify-content: center;
     }
 
-    .setion-shop {
+    /* .setion-shop {
         width: 100%;
         height: 1700px;
-    }
+    } */
 
-    .box-product-sell {
+    /* .box-product-sell {
         width: 100%;
-        height: 1700px;
+        height: 1500px;}
         /* background-color: #FF9B42; */
-    }
+    
 
     .all-new-product {
         width: 100%;
