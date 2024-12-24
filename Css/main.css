@@ -13,7 +13,30 @@ body {
     --color-text: #070707;
     --Hover-icon: #0c0c0b;
 }
+/* Phần hearder chi tiết sp */
+.header1 {
+    width: 100%;
+    height: 62px;
+    padding: 15px 0;
+    background-color: rgb(255, 255, 255);
+     /* position: relative; */
+     border-top: 1.3px solid black; /* Viền trên màu đen */
+     border-bottom: 0.1px solid rgb(152, 150, 150); /* Viền trên màu đen */
 
+    z-index: 1;
+}
+
+.header1 .content {
+    width: 100%;
+    height: 30.594px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header1 .box-menu {
+    width: 38%;
+}
 /* Phần hearder  */
 .header {
     width: 100%;
@@ -23,7 +46,7 @@ body {
      /* position: relative; */
      position: fixed; 
      border-top: 1.3px solid black; /* Viền trên màu đen */
-     border-bottom: 0.1px solid rgb(172, 170, 170); /* Viền trên màu đen */
+     border-bottom: 0.1px solid rgb(152, 150, 150); /* Viền trên màu đen */
 
     z-index: 1;
 }
