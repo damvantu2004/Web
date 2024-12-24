@@ -4,7 +4,7 @@
            margin: 0 auto; /* Căn giữa container theo chiều ngang */
           padding: 20px; /* Tạo khoảng cách lề trong 20px */
         
-           background-color: #fff; /* Đặt màu nền trắng cho container */
+           background-color: #fefcfc; /* Đặt màu nền trắng cho container */
          
       }
        /* CSS cho tiêu đề giỏ hàng */
@@ -111,7 +111,7 @@
         /* CSS cho button tiếp tục mua sắm */
         .cart-actions .btn-continue {
             background-color: #ddd; /* Màu nền xám nhạt */
-           color: #333; /* Màu chữ xám đậm */
+           color: #ec6e2a; /* Màu chữ xám đậm */
       }
         /* CSS cho button tiếp tục mua sắm khi di chuột vào */
        .cart-actions .btn-continue:hover{

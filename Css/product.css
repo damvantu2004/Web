@@ -130,7 +130,7 @@
 .details-section .options {
     margin: 20px 0;
     display: flex;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .details-section .options div {
