@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <title>
+   Chi tiết sản phẩm
+  </title>
+  <link rel="icon" href="../../Picture/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../Css/product.css">
+  <link rel="stylesheet" href="../../Css/main-moblie.css">
+  <link rel="stylesheet" href="../../Css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="content">
+            <div class="box-menu-mobile">
+                <button onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown">
+                    <a href="../index.html" class="hover-a">Trang chủ</a>
+                    <a href="shop.html" class="hover-a">Cửa hàng</a>
+                    <a href="" class="hover-a">Về chúng tôi</a>
+                    <a href="blog.html" class="hover-a">Blog</a>
+                </div>
+            </div>
+            <nav class="box-menu" id="menu">
+                <ul class="all-list-menu">
+                    <li>
+                        <a href="../../index.html" class="hover-a">Trang chủ</a>
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../../Page/shop.html" class="hover-a">Cửa hàng</a>
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../../Page/about.html" class="hover-a">Về chúng tôi</a>
+                    </li>
+                    <li class="padding-list-menu">
+                        <a href="../../Page/blog.html" class="hover-a">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="box-logo">
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../../Picture/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="box-icon">
+                <a href="" class="box-search">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </a>
+                <a href="../login.html" class="box-user">
+                    <i class="fa-regular fa-user user"></i>
+                </a>
+                <a href="" class="box-heart">
+                    <i class="fa-regular fa-heart heart"></i>
+                </a>
+                 <a href="../giohang.html" class="box-cart">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="nav">
+    <a href="#">
+        Toàn bộ sản phẩm
+    </a>
+    <a href="#">
+        Ghế & Sofa
+    </a>
+    <a href="#">
+        Nội thất
+    </a>
+    <a href="#">
+        Thiết bị chiếu sáng
+    </a>
+    <a href="#">
+        Nội thất mềm
+    </a>
+    <a href="#">
+        Phụ kiện gia đình
+    </a>
+</div>
+
+<div class="container ml-5">
+    <div class="row ">
+        <!-- Image Section -->
+       
+            <div class="col-12 col-md-6">
+             
+                <div class="image-section">
+                    <img id="main-image" alt="Kayra Queen Storage Bed - Ivory Bouclé" height="500" src="../../Picture/Product/sanpham12_1.webp">
+                </div>
+                <div class="image-section1 d-flex justify-content-center flex-wrap mt-3">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham12_1.webp" width="100"  onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham12_2.webp" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham12_3.webp" width="100" onclick="changeMainImage(this)">
+                    <img alt="" height="100" src="../../Picture/Product/sanpham12_4.webp" width="100" onclick="changeMainImage(this)">
+              </div>
+            </div>
+  
+
+        <!-- Details Section -->
+        <div class="col-12 col-md-6">
+            <div class="details-section">
+                <h1 id="product-name">Tủ sách Mysen 64" - Quả óc chó P12</h1>
+                <div class="price" id="product-price">15.000.000 VND</div>
+                <div class="rating">
+                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                    <i style="color: #fcad02;" class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <a href="#">1 đánh giá</a>
+                </div>
+
+                <div class="detail-section">
+                    <div class="options">
+                        <div class="option1">
+                            <span>Màu sắc:</span>
+                            <div class="option-buttons">
+                                <button onclick="toggleActive(this)">BLACK</button>
+                                <button class="active" onclick="toggleActive(this)">WHITE</button>
+                            </div>
+                        </div>
+                        <div class="option1">
+                            <span>Kích thước:</span>
+                            <div class="option-buttons">
+                                <button onclick="toggleActive(this)">TO</button>
+                                <button class="active" onclick="toggleActive(this)">NHỎ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="add-to-cart" onclick="addToCart()">THÊM VÀO GIỎ HÀNG</button>
+                <div class="info"><i class="fas fa-truck"></i><span>Vận chuyển tới <a href="#">Đống Đa, Hà Nội</a>: 31 tháng 10 - 19 tháng 11</span></div>
+                <div class="info"><i class="fas fa-check-circle"></i><span>Trong kho và sẵn sàng vận chuyển</span></div>
+                <div class="info"><i class="fas fa-undo"></i><span><a href="#">Bảo hành trong 30 ngày</a></span></div>
+                <div class="info"><i class="fas fa-dollar-sign"></i><span><a href="#">Trả góp</a> Thấp nhất 1.500.000 VND/Tháng</span></div>
+            </div>
+        </div>
+        <div class="product-description">
+            <h2>Mô tả</h2>
+            <p>
+                Vẻ đẹp của các tấm ván. Sự thanh lịch của kệ sách Mysen nằm ở thiết kế đơn giản, mở rộng. Hai tấm ván veneer óc chó được lắp lên khung gỗ 
+                óc chó nguyên khối tạo nên một nền tảng nổi bật, để bất kỳ vật phẩm nào cũng có thể tỏa sáng.
+            </p>
+            <h3>Tính năng</h3>
+            <ul>
+                <li>Được chế tạo từ gỗ nguyên khối và gỗ veneer.</li>
+                <li>Gỗ tự nhiên có sự khác biệt về màu sắc và kết cấu — không có hai sản phẩm nào hoàn toàn giống nhau.</li>
+                <li>Cần lắp ráp một phần (khoảng 15 phút).</li>
+            </ul>
+        </div>        
+    </div>
+</div>
+
+<script>
+    function changeMainImage(smallImage) {
+        document.getElementById("main-image").src = smallImage.src;
+    }
+    
+    function toggleActive(element) {
+        const siblings = element.parentNode.querySelectorAll('button');
+        siblings.forEach((btn) => btn.classList.remove('active'));
+        element.classList.add('active');
+    }
+   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartCount = 0;
+
+    function addToCart() {
+        const productName = document.getElementById("product-name").textContent;
+        const productPrice = document.getElementById("product-price").textContent;
+
+        const product = {
+            name: productName,
+            price: productPrice,
+            quantity: 1
+        };
+
+        cart.push(product);
+         localStorage.setItem('cart', JSON.stringify(cart)); // Lưu vào local storage
+        cartCount++;
+        updateCartDisplay();
+
+        alert("Sản phẩm đã được thêm vào giỏ hàng!");
+    }
+     function updateCartDisplay() {
+         let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.getElementById('cart-count').textContent = totalQuantity;
+    }
+   updateCartDisplay()
+</script>
+
+
+<div class="border"></div>
+<div class="box-product-sell">
+    <div class="box-product-sell-2">
+        <div class="in-title">
+            <div class="word">
+                Ưu đãi trong ngày
+            </div>
+            <div class="see-deals">
+                <a href="">
+                    Xem tất cả ưu đãi
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="product-slider">
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-1"
+                                    src="https://cdn-images.article.com/products/SKU343/2890x1500/image134268.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="box-sell">-33%</div>
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 đánh giá)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1 </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>3.500.000 VND</del> <span>2.300.000 VND</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-2"
+                                    src="https://cdn-images.article.com/products/SKU24344/2890x1500/image159954.jpg?w=850&q=40&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 đánh giá)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1</div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>3.500.000 VND</del> <span>2.300.000 VND</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-3"
+                                    src="https://cdn-images.article.com/products/SKU2128/2890x1500/image162322.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 đánh giá)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1 </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>4.000.000 VND</del> <span>2.000.000 VND</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="new-product">
+                        <a href="" style="text-decoration: none;">
+                            <div class="new-img-product">
+                                <img class="Pic-4"
+                                    src="https://cdn-images.article.com/products/SKU26174/2890x1500/image170637.jpg?w=2600&q=60&fm=webp&fit=max"
+                                    alt="">
+                                <div class="note-notif">
+                                    <div class="title-hot">Hot</div>
+                                </div>
+                                <div class="all-box-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="contents-new-product">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="view-product">(4 đánh giá)</div>
+                            </div>
+                        </a>
+                        <div class="box-name-product">
+                            <div class="name-product">VB1 Little Petra Lounge Chair & ATD1  </div>
+                            <div id="Prict-prod" class="price-product">
+                                <del>5.200.000 VND</del> <span>3.000.000 VND</span>
+                            </div>
+                            <div class="buttom-1">
+                                <button type="submit">
+                                    <i class="fa-solid fa-cart-plus"></i> <span>thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>var left = document.getElementById("left1");
+            var right = document.getElementById("right1");
+            var container = document.querySelector(".product-container");
+
+            right.onclick = function () {
+                container.style.transform = "translateX(-33.33%)";
+            };
+
+            left.onclick = function () {
+                container.style.transform = "translateX(0)";
+            };
+        </script>
+    </div>
+</div>
+
+<div class="border"></div>
+
+<div class="contact-container">
+    <div class="contact-header">Bạn có câu hỏi? Chúng tôi ở đây để giúp đỡ</div>
+
+    <div class="contact-info row">
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <span class="highlight">0999999999</span>
+                <div class="details">
+                    <span>8:00 - 17:00 Thứ 2 - Thứ 6</span>
+                    <span>9:00 - 17:00 Thứ 7 - Chủ nhật</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-comments"></i>
+            <div>
+                <span class="highlight">Trò chuyện trực tiếp với chúng tôi</span>
+                <div class="details">
+                    <span>8:00 - 17:00 Thứ 2 - Thứ 6</span>
+                    <span>9:00 - 17:00 Thứ 7 - Chủ nhật</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-item col-12 col-md-4">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <span class="highlight">Gửi tin nhắn cho chúng tôi</span>
+                <div class="details">
+                    <span>Chúng tôi sẽ phản hồi trong vòng 24h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container1">
+    <h2 class="section-title">TẠI SAO NÊN MUA HÀNG TẠI FU?</h2>
+    <div class="benefit-items">
+        <div class="benefit-item">
+            <i class="fas fa-dollar-sign"></i>
+            <h3 class="benefit-title">Nội thất hiện đại với giá hợp lý</h3>
+            <p class="benefit-description">Lời hứa của chúng tôi? Đồ nội thất chất lượng cao với mức giá hoàn toàn thấp hơn (và hợp lý hơn nhiều) so với các nhà bán lẻ tương đương.</p>
+            <a href="#" class="benefit-link">Tìm hiểu thêm</a>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3 class="benefit-title">Đảm bảo sự hài lòng trong 30 ngày</h3>
+            <p class="benefit-description">Chúng tôi tin rằng bạn sẽ thích đồ nội thất Article mới của mình nhưng để đảm bảo, bạn có 30 ngày để dùng thử.</p>
+            <a href="#" class="benefit-link">Tìm hiểu thêm</a>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-question-circle"></i>
+            <h3 class="benefit-title">Chúng tôi ở đây để trợ giúp</h3>
+            <p class="benefit-description">Nếu có thắc mắc, nhóm Chăm sóc khách hàng thân thiện và hiểu biết của chúng tôi chỉ cần gọi điện thoại, trò chuyện hoặc gửi email.</p>
+            <a href="#" class="benefit-link">Kết nối với chúng tôi</a>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center text-center text-md-start">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <h1 class="fw-light">Sản phẩm mới, tiết kiệm hấp dẫn Gửi thẳng đến hộp thư của bạn.</h1>
+            <p class="text-muted">Theo kịp những gì chúng tôi đang làm. Hủy đăng ký bất cứ lúc nào.</p>
+        </div>
+        <div class="col-md-6">
+            <form class="row g-2">
+                <div class="col-12 col-md-auto flex-grow-1">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <button type="submit" class="btn btn-subscribe text-white px-4 w-100">ĐĂNG KÝ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <!-- footer -->
+  <div class="box-first-footer">
+    <div class="contact">
+        <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <div class="in">
+            <div> 12 Chùa Bộc, Đống Đa, Hà Nội</div>
+            <div> 0999999999</div>    
+            <div> kbtisun2k@gmail.com</div>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>THỂ LOẠI</h2>
+        <div class="in">
+            <a href="">
+                <div>Nội thất</div>
+            </a>
+            <a href="">
+                <div>Bàn</div>
+            </a>
+            <a href="">
+                <div>Ghế</div>
+            </a>
+            <a href="">
+                <div>Bàn Làm Việc</div>
+            </a>
+            <a href="">
+                <div>Tủ Đựng</div>
+            </a>
+            <a href="">
+                <div>Phòng Ngủ và Phòng Tắm</div>
+            </a>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>DỊCH VỤ</h2>
+        <div

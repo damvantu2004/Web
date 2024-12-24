@@ -375,3 +375,7 @@
   color: #858585;
 }
 
+.product-description  p, li{
+  text-align: justify;
+}
+

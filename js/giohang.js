@@ -29,11 +29,11 @@
              // Đây là một hàm tạm thời để map tên sản phẩm với ảnh.
              // Trong thực tế, bạn nên sử dụng cơ sở dữ liệu hoặc một cách khác để lấy thông tin ảnh sản phẩm.
             if (productName.includes('Ghế sofa')) {
-               return '../../Picture/Product/sanpham1_1.webp';
+               return '../Picture/Product/sanpham1_1.webp';
            } else if(productName.includes('Lounge Chair')){
                 return 'https://cdn-images.article.com/products/SKU343/2890x1500/image134268.jpg?w=2600&q=60&fm=webp&fit=max';
             } else {
-               return '../../Picture/logo.png';
+               return '../Picture/logo.png';
             }
          }
 
