@@ -93,7 +93,7 @@
             <div class="col-12 col-md-6">
                 <div class="details-section">
                     <h1 id="product-name">Sven 107" Ghế sofa vuông góc P1</h1>
-                    <div class="price" id="product-price">45.000.000 VND</div>
+                     <div class="price" id="product-price" data-price="45000000">45.000.000 VND</div>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <button id ="add-to-cart-btn" class="add-to-cart" onclick="addToCart()">THÊM VÀO GIỎ HÀNG</button>
-                    <button id ="add-to-cart-btn" class="add-to-cart" >Mua ngay</button>
+                    <a href="../dathang.html"><button  class="add-to-cart">Mua ngay</button></a>
 
                     <div class="info"><i class="fas fa-truck"></i><span>Vận chuyển tới <a href="#">Đống Đa, Hà Nội</a>: 31 tháng 10 - 19 tháng 11</span></div>
                     <div class="info"><i class="fas fa-check-circle"></i><span>Trong kho và sẵn sàng vận chuyển</span></div>
@@ -157,54 +157,53 @@
             element.classList.add('active');
         }
 
-       let cart = JSON.parse(localStorage.getItem('cart')) || [];
-          let id = 1
-    function addToCart() {
-          const productName = document.getElementById("product-name").textContent;
-          const productPriceElement = document.getElementById("product-price");
-          const productPriceText = productPriceElement.textContent;
-        
-           // Loại bỏ "VND" và các dấu chấm, sau đó chuyển đổi thành số
-           const productPrice = parseFloat(productPriceText.replace(/[^\d]/g, ''));
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let id = 1;
 
-         const product = {
-            id: id++,
-            name: productName,
-             price: productPrice
-         };
-        addItemToCart(product);
-        alert("Sản phẩm đã được thêm vào giỏ hàng!");
-    }
+        function addToCart() {
+            const productName = document.getElementById("product-name").textContent;
+            const productPriceElement = document.getElementById("product-price");
+            const productPrice = parseFloat(productPriceElement.getAttribute('data-price'));
 
-        function updateCartDisplay() {
-            let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-        document.getElementById('cart-count').textContent = totalQuantity;
-     }
-       
-         // Hàm thêm sản phẩm vào giỏ hàng (mới)
-    function addItemToCart(product) {
-    const existingItem = cart.find(item => item.name === product.name);
-    if (existingItem) {
-        increaseQuantity(product.name); // tăng số lượng nếu sản phẩm đã có
-    } else {
-        cart.push({...product, quantity: 1}); // thêm mới với số lượng là 1
-    }
-      localStorage.setItem('cart', JSON.stringify(cart));
-         updateCartDisplay();
-    }
-    
-    // Hàm tăng số lượng sản phẩm trong giỏ hàng
-        function increaseQuantity(productName) {
-         cart = cart.map(item => {
-           if (item.name === productName) {
-               item.quantity++;
+            const product = {
+                id: id++,
+                name: productName,
+                price: productPrice,
+            };
+            addItemToCart(product);
+            alert("Sản phẩm đã được thêm vào giỏ hàng!");
+        }
+
+
+         function addItemToCart(product) {
+           const existingItem = cart.find(item => item.name === product.name);
+           if (existingItem) {
+              increaseQuantity(product.name);
+           } else {
+             cart.push({...product, quantity: 1});
            }
-         return item;
-       });
-      localStorage.setItem('cart', JSON.stringify(cart));
-     updateCartDisplay();
- }
- updateCartDisplay()
+            saveCartAndUpdate();
+        }
+
+        function increaseQuantity(productName) {
+            cart = cart.map(item => {
+                if (item.name === productName) {
+                    item.quantity++;
+               }
+                return item;
+            });
+             saveCartAndUpdate();
+       }
+       
+      function saveCartAndUpdate() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+             updateCartDisplay();
+      }
+     function updateCartDisplay() {
+        let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+       document.getElementById('cart-count').textContent = totalQuantity;
+       }
+        updateCartDisplay();
     </script>
 
     <div class="border"></div>

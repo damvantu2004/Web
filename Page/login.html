@@ -63,7 +63,7 @@
     </div>
 
     <script>
-        document.getElementById('signInButton').addEventListener('click', function () {
+         document.getElementById('signInButton').addEventListener('click', function () {
             const emailOrPhone = document.getElementById('email').value.trim();
             const password = document.getElementById('password').value.trim();
 
@@ -87,27 +87,33 @@
             const phoneRegex = /^\d{10}$/;
 
 
-            if (emailRegex.test(emailOrPhone)) {
-              // Valid email
-               if (emailOrPhone === "nguoidung@example.com" && password === "123456") {
-                    alert("Đăng nhập thành công!");
-                    window.location.href = '../index.html';
-                 } else {
-                    alert("Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
-                }
-            } else if (phoneRegex.test(emailOrPhone)) {
-                 // Valid phone number
-                if (emailOrPhone === "0999999999" && password === "123456") {
-                    alert("Đăng nhập thành công!");
-                     window.location.href = '../index.html';
-                  } else {
-                    alert("Số điện thoại hoặc mật khẩu không đúng. Vui lòng thử lại.");
-                 }
+             // Lấy thông tin đăng ký từ localStorage
+             const userDataString = localStorage.getItem('userData');
+            if (userDataString) {
+                const userData = JSON.parse(userDataString);
+                 if (emailRegex.test(emailOrPhone)) {
+                   // Valid email
+                  if (userData.emailOrPhone === emailOrPhone && userData.password === password) {
+                        alert("Đăng nhập thành công!");
+                       window.location.href = '../index.html';
+                   } else {
+                        alert("Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
+                    }
+                 } else if (phoneRegex.test(emailOrPhone)) {
+                    // Valid phone number
+                    if (userData.emailOrPhone === emailOrPhone && userData.password === password) {
+                        alert("Đăng nhập thành công!");
+                      window.location.href = '../index.html';
+                    } else {
+                         alert("Số điện thoại hoặc mật khẩu không đúng. Vui lòng thử lại.");
+                      }
+               } else {
+                   alert("Vui lòng nhập đúng định dạng email hoặc số điện thoại (10 chữ số).");
+               }
             } else {
-               alert("Vui lòng nhập đúng định dạng email hoặc số điện thoại (10 chữ số).");
-           }
-
-
+                alert("Bạn chưa đăng ký tài khoản. Vui lòng đăng ký trước.");
+                 window.location.href = 'dangky.html';
+            }
         });
     </script>
     <script src="https://kit.fontawesome.com/eda05fcf5c.js" crossorigin="anonymous"></script>
