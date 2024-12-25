@@ -42,8 +42,30 @@ function calculateTotalPrice() {
 // Hàm để lấy đường dẫn ảnh sản phẩm dựa trên tên sản phẩm (tạm thời)
 // Hàm này trả về đường dẫn ảnh dựa trên tên sản phẩm, bạn có thể tùy chỉnh đường dẫn này.
 function getProductImage(productName) {
-  if (productName.includes('Ghế sofa')) {
+  if (productName.includes('P01')) {
     return '../Picture/Product/sanpham1_1.webp';
+  } else if(productName.includes('P02')) {
+    return '../Picture/Product/sanpham2_1.webp';
+  } else if(productName.includes('P03')) {
+    return '../Picture/Product/sanpham3_1.webp';
+  } else if(productName.includes('P04')) {
+    return '../Picture/Product/sanpham4_1.webp';
+  } else if(productName.includes('P05')) {
+    return '../Picture/Product/sanpham5_1.webp';
+  } else if(productName.includes('P06')) {
+    return '../Picture/Product/sanpham6_1.webp';
+  } else if(productName.includes('P07')) {
+    return '../Picture/Product/sanpham7_1.webp';
+  } else if(productName.includes('P08')) {
+    return '../Picture/Product/sanpham8_1.webp';
+  } else if(productName.includes('P09')) {
+    return '../Picture/Product/sanpham9_1.webp';
+  } else if(productName.includes('P10')) {
+    return '../Picture/Product/sanpham10_1.webp';
+  } else if(productName.includes('P11')) {
+    return '../Picture/Product/sanpham11_1.webp';
+  } else if(productName.includes('P12')) {
+    return '../Picture/Product/sanpham12_1.webp';
   } else if (productName.includes('Lounge Chair')) {
     return 'https://cdn-images.article.com/products/SKU343/2890x1500/image134268.jpg?w=2600&q=60&fm=webp&fit=max';
   } else {
@@ -91,7 +113,7 @@ function renderCartItems() {
                            }" style="z-index: 5; margin-right: 5px;">-</button>
                            <input type="number" class="form-control input-number" value="${
                              item.quantity
-                           }" min="1" max="10" disabled style="height: 19px; width: 60px; font-size: 1.3rem; flex: 0.005 1 auto; margin-left:13px;text-align: center;">
+                           }" min="1" max="10" disabled style="height: 19px; width: 60px; font-size: 1rem; flex: 0.005 1 auto; margin-left:13px;text-align: center;">
                            <button type="button" class="btn btn-number btn-sm btn-plus" data-name="${
                              item.name
                            }" style="z-index: 5; margin-left: 5px;">+</button>

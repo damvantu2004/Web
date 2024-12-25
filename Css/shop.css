@@ -14,12 +14,11 @@ html {
     --Hover-icon: #FF9B42;
 }
 
-
+/* Banner */
 .box-banner-shop {
     width: 100%;
     height: 476px;
     margin-bottom: 60px;
-    background-color: aqua;
     padding: 85px 0 90px 0;
     background:rgb(237, 235, 235) ;
     background-size: cover;
