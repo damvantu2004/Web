@@ -19,7 +19,7 @@ html {
 
 
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 900px) {
     /* .header1 {
     vertical-align: middle; /* căn phần tử theo chiều dọc giữa các phần tử liền kề trong một container */
    /* }*/
@@ -266,12 +266,14 @@ html {
         height: 398px;
         padding: 15px;
         justify-content: center;
+        position: absolute ;
+
     }
 
     .box-bg .box-img .pic-chair {
         width: 330px;
         height: 398px;
-        position: relative;
+        /* position: absolute; */
         z-index: 1;
         display: flex;
         flex-wrap: wrap;

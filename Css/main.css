@@ -204,6 +204,7 @@ body {
     margin-bottom: 10px;
     letter-spacing: 2.5px;
     transition: 5s;
+    text-shadow: 0 4px 8px #bab9b9;
 }
 
 .in-content .text-title {
@@ -764,8 +765,9 @@ body {
 .box-bg .box-img {
     width: 545px;
     height: 629px;
-    position: absolute;
+    position: absolute ;
     right: 60px;
+    
     /* background-color: black; */
 }
 

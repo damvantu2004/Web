@@ -106,7 +106,7 @@ setInterval(function() {
         index = 0;
     }
     document.getElementById('pic').src = img[index];
-}, 1500);
+}, 900);
 
 /// chuyển đổi ảnh trong khi hover vào img product
 let firstImg = document.getElementById('Pic-1');
