@@ -1,152 +1,156 @@
+/* Đặt margin, padding về 0 và sử dụng box-sizing để tính toán kích thước phần tử dễ dàng hơn */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Đặt font chữ mặc định cho toàn bộ trang */
 html {
     font-family: 'Questrial', sans-serif;
 }
 
+/* Định nghĩa các biến màu dùng chung trong giao diện */
 :root {
-    --color-text: #868686;
-    --Hover-icon: #FF9B42;
+    --color-text: #868686; /* Màu chữ chính */
+    --Hover-icon: #FF9B42; /* Màu khi hover vào các phần tử */
 }
 
+/* Ẩn menu cho thiết bị di động mặc định */
 .box-menu-mobile {
     display: none;
 }
 
-
-
+/* Quy tắc CSS dành cho màn hình có chiều rộng tối đa 900px (thiết bị di động hoặc máy tính bảng) */
 @media screen and (max-width: 900px) {
-    /* .header1 {
-    vertical-align: middle; /* căn phần tử theo chiều dọc giữa các phần tử liền kề trong một container */
-   /* }*/
 
+    /* Ẩn menu trong header1 trên thiết bị di động */
     .header1 .content .box-menu {
         display: none;
     }
+
+    /* Đặt các thành phần trong header1 cách đều nhau */
     .header1 .content {
-        /* background-color: #FF9B42; */
         padding: 0;
         display: flex;
-        justify-content: space-between; /* căn giữa nội dung header*/
-        gap: 80px;
+        justify-content: space-between; /* Căn giữa nội dung trong header */
+        gap: 80px; /* Khoảng cách giữa các phần tử */
     }
+
+    /* Căn giữa các phần tử trong header */
     .header {
         vertical-align: middle;
     }
 
+    /* Ẩn menu trong header trên thiết bị di động */
     .header .content .box-menu {
         display: none;
     }
 
+    /* Hiển thị menu dạng di động (icon) */
     .box-menu-mobile {
         display: block;
     }
 
+    /* Nút menu di động */
     .box-menu-mobile button {
         width: 40px;
         height: 34px;
         border: none;
-        background-color: #fff;
+        background-color: #fff; /* Màu nền trắng */
     }
 
+    /* Icon trong nút menu */
     .box-menu-mobile button i {
         text-align: center;
-        font-size: 19px;
+        font-size: 19px; /* Kích thước icon */
         margin: 0;
     }
-/* Thêm các quy tắc CSS cho dropdown menu */
-.box-menu-mobile .dropdown {
-    display: none; /* Ẩn menu mặc định */
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
 
-.box-menu-mobile .dropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+    /* Dropdown menu cho menu di động */
+    .box-menu-mobile .dropdown {
+        display: none; /* Ẩn menu mặc định */
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+        z-index: 1; /* Đảm bảo menu nằm trên các thành phần khác */
+    }
 
-.box-menu-mobile .dropdown a:hover {
-    background-color: #ddd;
-}
+    /* Style cho các liên kết trong dropdown menu */
+    .box-menu-mobile .dropdown a {
+        color: black; /* Màu chữ đen */
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
 
-.box-menu-mobile.show .dropdown {
-    display: block; /* Hiển thị menu khi có class 'show' */
-}
+    /* Hiệu ứng hover cho liên kết trong dropdown */
+    .box-menu-mobile .dropdown a:hover {
+        background-color: #ddd; /* Màu nền xám khi hover */
+    }
+
+    /* Hiển thị dropdown menu khi có class 'show' */
+    .box-menu-mobile.show .dropdown {
+        display: block;
+    }
+
+    /* Đặt header cho thiết bị di động */
     .header .content {
-        /* background-color: #FF9B42; */
         padding: 0;
         display: flex;
         justify-content: space-between;
-        gap: 80px;
+        gap: 80px; /* Khoảng cách giữa các phần tử */
     }
 
+    /* Logo trong header có kích thước nhỏ hơn */
     .box-logo {
         width: 200px;
     }
 
     .box-logo .logo a img {
-        width: 170px;
-        height: 51px;
+        width: 170px; /* Chiều rộng logo */
+        height: 51px; /* Chiều cao logo */
     }
 
+    /* Icon trong header nhỏ hơn cho phù hợp với thiết bị di động */
     .box-icon {
         width: 35px;
         display: flex;
     }
 
-    
-
-    .box-icon .box-user,.box-search, .box-heart, .box-cart {
+    /* Định dạng các icon trong header */
+    .box-icon .box-user, .box-search, .box-heart, .box-cart {
         display: flex;
         justify-content: flex-end;
     }
-    .search {
+
+    /* Kích thước icon nhỏ hơn */
+    .search, .user, .heart, .cart {
         font-size: 13px;
-        transition: 1s;
-    }
-    
-    .user {
-        font-size: 13px;
-        transition: 1s;
-    }
-    
-    .heart {
-        font-size: 13px;
-        transition: 1s;
-    }
-    
-    .cart {
-        font-size: 13px;
-        transition: 1s;
-    }
-    
-    .banner {
-        width: 100%;
-        height: 352px;
-        margin-bottom: 60px;
-        padding-top: 62px;
-        /* overflow: hidden; */
+        transition: 1s; /* Hiệu ứng mượt khi thay đổi kích thước */
     }
 
+    /* Thiết lập phần banner */
+    .banner {
+        width: 100%;
+        height: 352px; /* Chiều cao nhỏ hơn cho thiết bị di động */
+        margin-bottom: 60px;
+        padding-top: 62px; /* Chừa khoảng trống cho header cố định */
+    }
+
+    /* Hình ảnh trong banner được căn chỉnh và cắt gọn */
     .banner img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: cover; /* Cắt ảnh sao cho vừa khung */
     }
 
+    /* Điều chỉnh vị trí nội dung trong banner */
     .banner .in-content {
-        top: 39%;
+        top: 39%; /* Nội dung được đặt thấp hơn */
     }
 
+    /* Kích thước chữ tiêu đề trong banner nhỏ hơn */
     .in-content .title {
         font-size: 32px;
         letter-spacing: 0;
@@ -157,21 +161,24 @@ html {
         letter-spacing: 0;
     }
 
+    /* Nút trong banner nhỏ hơn */
     .in-content .all-button button {
         font-size: 10px;
         width: 167px;
         height: 35px;
     }
 
+    /* Danh sách chỉ mục của banner */
     #list {
-        top: 85%
+        top: 85%; /* Vị trí nằm dưới banner */
     }
 
     #list ul li button {
-        width: 13px;
+        width: 13px; /* Kích thước nút nhỏ hơn */
         height: 13px;
     }
 
+    /* Ẩn nút chuyển slide trong thiết bị di động */
     #left, #right {
         display: none;
     }
@@ -180,15 +187,19 @@ html {
         display: none;
     }
 
+    /* Padding trong phần room nhỏ hơn cho thiết bị di động */
     .box-room {
+        display: flex;
+    justify-content: space-evenly;
         padding: 0 14px;
     }
 
     .box-room a {
-        width: 100%;
+        width: 100%; /* Đảm bảo các box room chiếm toàn bộ chiều ngang */
         display: flex;
-        justify-content: center;
+        justify-content: center; /* Căn giữa nội dung */
     }
+
 
     /* .setion-shop {
         width: 100%;
@@ -266,7 +277,7 @@ html {
         height: 398px;
         padding: 15px;
         justify-content: center;
-        position: absolute ;
+        /* position: absolute ; */
 
     }
 
@@ -274,7 +285,6 @@ html {
         width: 330px;
         height: 398px;
         /* position: absolute; */
-        z-index: 1;
         display: flex;
         flex-wrap: wrap;
     }

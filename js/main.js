@@ -3,17 +3,18 @@ var img = [
     "Picture/slider-4.jpg",
     "Picture/slider-5.jpg",
     "Picture/slider-6.jpg",
+    // "Picture/image148461.webp",
 ];
 
-// them su kien vao nut chuyển slide 
-let objRight = document.getElementById('right');
-let listButton = document.querySelectorAll('#list ul li button');
+// them su kien vao nut chuyển slide qua phải
+let objRight = document.getElementById('right'); // nut chuyen slide qua phai
+let listButton = document.querySelectorAll('#list ul li button'); // list index img
 listButton[0].style = 'background-color: #FF9B42';
 
 let index = 0;
 
 objRight.addEventListener('click', function() {
-    index++;
+    index++; // tăng index lên 1
 
     // chuyển đổi màu cho list index 
     if(index == 1) {
@@ -31,9 +32,10 @@ objRight.addEventListener('click', function() {
     if(index >= img.length) {
         index = 0;
     }
-    document.getElementById('pic').src = img[index];
+    document.getElementById('pic').src = img[index]; //Cập nhật ảnh hiển thị với index
 });
-
+ 
+// them su kien vao nut chuyển slide qua trái
 let objLeft = document.getElementById('left');
 
 objLeft.addEventListener('click', function() {
@@ -51,9 +53,9 @@ objLeft.addEventListener('click', function() {
         listButton[0].style = 'background-color: #FF9B42';
     }
     if(index < 0) {
-        index = 2;
+        index = 2; // nếu index nhỏ hơn 0 thì chuyển về ảnh cuối cùng
     }
-    document.getElementById('pic').src = img[index];
+    document.getElementById('pic').src = img[index]; //Cập nhật ảnh hiển thị với index
 });
 
 // chuyển slide banner khi click vào list index img 
@@ -81,13 +83,13 @@ function indexNumber(num) {
         listButton[1].style = 'background-color: transparent';
         // end chuyển màu cho button list 
 
-        document.getElementById('pic').src = img[2];
+        document.getElementById('pic').src = img[2]; //Cập nhật ảnh hiển thị với index
     }
 }
 
 // Lặp lại slide trong phần banner
 setInterval(function() {
-    index++;
+    index++; // tăng index lên 1 mỗi 900ms
 
     // chuyển đổi màu cho list index 
     if(index == 1) {
@@ -151,6 +153,6 @@ firstImg_3.addEventListener('mouseout', function() {
     firstImg_3.src = "Picture/down.jpg";
 });
 function toggleMenu() {
-    const menu = document.querySelector('.box-menu-mobile');
-    menu.classList.toggle('show');
+    const menu = document.querySelector('.box-menu-mobile'); // lấy ra thẻ div chứa menu
+    menu.classList.toggle('show'); // thêm class show vào thẻ div hoặc xóa class show khỏi thẻ div nếu đã có
 }
